@@ -17,8 +17,9 @@ app.get('/gingerkisses', function(request, response){
   });
 });
 
+const PORT = process.env.PORT  || 3000
 
 // if I want the app to exist and run I'll tell it to listen
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log('GOOD JOB!');
 });
